@@ -42,4 +42,6 @@ This documentation provides insights into the binary hard decision-decoding algo
 
 ## References
 [1]https://www.researchgate.net/publication/338527931_HARD_DECISION_AND_SOFT_DECISION_DECODING_ALGORITHMS_OF_LDPC_AND_COMPARISION_OF_LDPC_WITH_TURBO_CODES_RS_CODES_AND_BCH_CODES
-[2https://github.com/uzum/ldpc-peg
+
+
+[2]https://github.com/uzum/ldpc-peg
