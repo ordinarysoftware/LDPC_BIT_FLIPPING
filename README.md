@@ -8,33 +8,23 @@ This documentation details the implementation and visualization of a binary hard
 
 ### Binary Hard Decision
 
-- Detector makes binary hard decisions for received bits.
-- Messages transmitted through Tanner graph edges.
-- Symbol nodes finalize messages as one or zero.
-- Check nodes declare values for connected symbol nodes.
+The binary hard decision for each received bit is done by the detector and forwarded to another decoder.[14] In this algorithm, the messages are transmitted through the Tanner graph edges and a symbol node sends a message finalizing if it is one or a zero, and then each check node sends a message to each connected symbol node by finally declaring what value the symbol node is based on the information available to the check node. The check node in this step finds that if the modulo-two sum of the input symbol node values is zero, its parity-check equation is satisfied.[14]
 
-### Parity-Check Equations
+However, the symbol node flips its current value, if most of the messages gotten by a symbol node are not the same as its received value. This process requires iteration where the algorithm is repeated until some maximum number of decoder iterations has
 
-- Check nodes verify equations.
-- Equation satisfied if modulo-two sum of symbol node values is zero.
+executed and decoder terminates, or until all the parity check equations are met. 
+This process makes the flipping algorithm a hard decision-decoding algorithm.
+In the bit flipping algorithm first function requires XOR the input messages bits at symbol nodes every time to check check nodes’s parity check equations. Another function is required to check whether to flip the bit or not to get the correct message. 
 
-### Iteration and Bit Flipping
 
-- Symbol nodes flip values if most received messages differ.
-- Iteration until max decoder iterations or all equations satisfied.
-
-### Bit Flipping Algorithm
-
-1. **Check Operation:**
-   - XOR operation at symbol nodes to check parity-check equations.
-     
 ![image](https://github.com/ordinarysoftware/LDPC_BIT_FLIPPING/assets/71903387/e46a37a3-c28c-4b29-8482-a0e075e26303)
 
-2. **Bit Flipping:**
-   - Function flips bits based on message correctness.
-   - Iterative updates for correct decoding.
-   
+
+The Second step is to flip the bit that is incorrect which was detected in the second function in step one and iterating through them helps to flip incorrect bits in symbol nodes.
+
+       
 ![image](https://github.com/ordinarysoftware/LDPC_BIT_FLIPPING/assets/71903387/b8b56196-b972-4342-b4df-35e575ce3ec1)
+
 
 ## Visualization Software
 
