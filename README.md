@@ -11,9 +11,10 @@ Tanner graphs are one of the ways to represent LDPC, which were introduced by Mi
 
 The parity-check matrix H of an LDPC code is a key element in Tanner graph visualization of LDPC codes. Given the parity-check matrix in equation 1, the corresponding Tanner graph is shown in figure 2 
 
-![Screenshot (283)](https://github.com/ordinarysoftware/LDPC_BIT_FLIPPING/assets/71903387/625762a4-f8e9-441c-8165-c66d65eb25c0)
+<p align="center">
+  <img src="https://github.com/ordinarysoftware/LDPC_BIT_FLIPPING/assets/71903387/625762a4-f8e9-441c-8165-c66d65eb25c0" alt="Figure 1">
+</p>
 Figure 1
-
 
 ![image](https://github.com/ordinarysoftware/LDPC_BIT_FLIPPING/assets/71903387/0545d270-6d95-4187-9891-d12335433209)
 Figure 2
