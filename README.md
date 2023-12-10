@@ -27,11 +27,13 @@ This documentation details the implementation and visualization of a binary hard
 
 1. **Check Operation:**
    - XOR operation at symbol nodes to check parity-check equations.
+   - 
 ![image](https://github.com/ordinarysoftware/LDPC_BIT_FLIPPING/assets/71903387/e46a37a3-c28c-4b29-8482-a0e075e26303)
 
 2. **Bit Flipping:**
    - Function flips bits based on message correctness.
    - Iterative updates for correct decoding.
+   - 
 ![image](https://github.com/ordinarysoftware/LDPC_BIT_FLIPPING/assets/71903387/b8b56196-b972-4342-b4df-35e575ce3ec1)
 
 ## Visualization Software
