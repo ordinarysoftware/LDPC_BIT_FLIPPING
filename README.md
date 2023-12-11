@@ -53,8 +53,14 @@ Figure 4
 - Real-time updates of Tanner graph during decoding process.
 
 ## Implementation Steps
+The implementation is composed of three files main.js, BFP.js, and tanner-graph.js. The main.js contains input values, and the function calls on the button click to submit and view the graph. The tanner-graph.js contains the Tanner Graph class and it only acts as an abstraction for the algorithms implemented on BFP.js also vis.js visualization functions renderer and prototypes. A Tanner graph is represented by the corresponding parity check matrix. Each symbol node values, symbol degrees, and number of check nodes are stored as well as the edges between them. A Tanner graph can create intermediate graphs from itself for the given node, which is a clone of the original Tanner graph. 
+
+BFP.js contains the actual bit-flipping algorithm and other supporting functions such XOR calculating function, dictionary reverse function, symbol node values update function. XOR calculation function calculates current XOR of symbol nodes connected by edges to check node. Symbol values update function which is implemented inside modularchecksum updates values of symbol nodes if XOR is not 0. Its BFP.create method should be called with the relevant parameters such as n, m, symbol node values array, and the symbol node degrees array. The return value is a Tanner Graph object representing the final graph after the successful execution of an algorithm. There is also the BFP.hook method which registers a callback function to be hooked into the edge addition step to see values change over steps.
+
+BFP.js also allows hooking into the edge creation step to inspect intermediate states while the algorithm is running. You can pass a callback function to the BFP.hook which will be called each time an edge has just been added. For instance, this code prints the current parity check matrix to the console each time an edge is added by the BFP algorithm:
 
 
+![Screenshot (284)](https://github.com/ordinarysoftware/LDPC_BIT_FLIPPING/assets/71903387/c4508677-7079-4421-979c-f65c4133185a)
 
 
 
