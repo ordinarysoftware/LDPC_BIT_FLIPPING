@@ -1,4 +1,4 @@
-# Binary Hard Decision-Decoding Algorithm with Bit Flipping
+# Binary Bit Flipping Algorithm
 
 ## Overview
 
