@@ -23,7 +23,7 @@ Figure 2
 
 
 ## Definitions
-
+Symbol node degree is the number of edges connected to a symbol node, which is the number of ones in the column of the parity check matrix corresponding to that symbol node. Check node degree is the number of edges connected to the check node which is the number of ones in the row of the parity check matrix corresponding to that check node. The symbol degree is a sequence degree list containing the symbol node degrees of all symbol nodes or number of edges symbol node can have. The symbol node values are a sequence value list containing the symbol node values of all symbol nodes. The check degree is a sequence degree list containing the check node degrees of all check nodes. Girth is the length of the shortest cycle in the Tanner graph
 
 ## Algorithm
 
