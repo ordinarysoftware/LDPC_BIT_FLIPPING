@@ -27,7 +27,7 @@ Symbol node degree is the number of edges connected to a symbol node, which is t
 
 ## Algorithm
 
-### Binary Hard Decision
+### Binary Bit-Flipping
 
 The binary hard decision for each received bit is done by the detector and forwarded to another decoder.[1] In this algorithm, the messages are transmitted through the Tanner graph edges and a symbol node sends a message finalizing if it is one or a zero, and then each check node sends a message to each connected symbol node by finally declaring what value the symbol node is based on the information available to the check node. The check node in this step finds that if the modulo-two sum of the input symbol node values is zero, its parity-check equation is satisfied.[1]
 
